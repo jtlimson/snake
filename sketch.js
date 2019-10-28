@@ -6,12 +6,13 @@ let h;
 
 
 function setup() {
-  createCanvas(400, 400);
+  let canvas =  createCanvas(600, 600);
   w = floor(width / rez);
   h = floor(height / rez);
   frameRate(9);
   snake = new Snake();
   foodLocation();
+canvas.parent('sketch-holder');
 }
 
 function foodLocation() {
